@@ -64,15 +64,7 @@ export default function Button() {
               : ""
           }`}
         />
-        <div
-          className={`z-10 absolute left-0 top-0 h-full w-20 bg-orange-400/30 blur-sm rounded-full transition-all duration-500 ${
-            direction === "right"
-              ? "translate-x-36"
-              : direction === "left"
-              ? "left-0"
-              : ""
-          }`}
-        />
+        
         <div
           className={`z-10 absolute left-0 top-0 h-full w-20 bg-orange-400/30 blur-lg rounded-full transition-all duration-500 ${
             direction === "right"
@@ -117,16 +109,14 @@ export default function Button() {
           }`}
         />
         <div
-          className={`z-10 absolute left-0 top-0 h-full w-20 rounded-full overflow-hidden flex items-center transition-all duration-500 ${
+          className={`z-10 absolute left-0 top-0 h-full w-20 rounded-full bg-white/20 blur-sm transition-all duration-500 ${
             direction === "right"
-              ? "translate-x-36 justify-end"
+              ? "translate-x-36"
               : direction === "left"
               ? "left-0"
               : ""
           }`}
-        >
-          <div className="w-16 h-full rounded-full bg-white/60 blur-sm"></div>
-        </div>
+        />
       </div>
     </div>
   );
